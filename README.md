@@ -56,7 +56,7 @@ The model is evaluated using:
 
 ### 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/<your-username>/Rice-Leaf-Disease-Prediction.git
+git clone https://github.com/K-m-jesferali/Rice-leaf-Disease-Prediction.git
 cd Rice-Leaf-Disease-Prediction
 ```
 
@@ -75,8 +75,6 @@ Open `Rice_leaf.ipynb` in Jupyter Notebook or VS Code and execute the cells step
 The dataset contains images of rice leaves categorized into three disease classes.  
 Each image is preprocessed by resizing and normalization before training.
 
-*(Dataset source can be Kaggle or manually collected — update this if applicable.)*
-
 ---
 
 ## 📈 Results
@@ -94,8 +92,8 @@ The trained model is saved in `.h5` format and can be loaded for future predicti
 
 ## 👨‍💻 Author
 
-**Your Name**  
-📧 [your.email@example.com]  
+**Mohamed Jesfer Ali K**  
+📧 kmjesferali2003@gmail.com  
 📍 India  
 
 ---
