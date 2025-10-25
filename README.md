@@ -26,8 +26,7 @@ The workflow includes **data preprocessing**, **model building**, **training**, 
 | 4. Compile | Configure optimizer, loss, and evaluation metrics |
 | 5. Train | Fit the CNN on training data |
 | 6. Evaluate | Measure performance using accuracy and confusion matrix |
-| 7. Save | Save the trained model for future predictions |
-| 8. Predict | Test on unseen rice leaf images |
+| 7. Predict | Test on unseen rice leaf images |
 
 ---
 
@@ -35,10 +34,18 @@ The workflow includes **data preprocessing**, **model building**, **training**, 
 
 A **Convolutional Neural Network (CNN)** was used with the following layers:
 
-- Convolutional + MaxPooling layers for feature extraction  
-- Dropout layers for regularization  
-- Dense (fully connected) layers for classification  
-- Output layer with softmax activation (for 3-class classification)
+- Base Model:Convolutional + MaxPooling layers for feature extraction  
+- Dropout layers: for regularization  
+- Fully Connected Layers: for classification  
+- Output Layer: softmax activation (for 3-class classification)
+
+A **Transfer Learning** was used with the following layers:
+
+- Base Model: MobileNetV2 (pre-trained on ImageNet) used for feature extraction.
+- Frozen Layers: The convolutional base is frozen to retain pre-trained weights.
+- Fully Connected Layers: for classification
+- Dropout layers: for regularization 
+- Output Layer: softmax activation (for 3-class classification)
 
 ---
 
